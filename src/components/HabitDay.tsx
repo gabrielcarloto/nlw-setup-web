@@ -1,5 +1,4 @@
 import * as Popover from '@radix-ui/react-popover';
-import c from 'classnames';
 import ProgressBar from './ProgressBar';
 
 interface HabitDayProps {
@@ -10,12 +9,11 @@ export default function HabitDay({ disabled }: HabitDayProps) {
   return (
     <Popover.Root>
       <Popover.Trigger
-        className={c(
-          'w-10 h-10 bg-zinc-900 border-2 border-zinc-800 rounded-lg',
-          {
-            ['opacity-40 cursor-not-allowed']: disabled,
-          },
-        )}
+        className={'w-10 h-10 bg-zinc-900 border-2 border-zinc-800 rounded-lg'}
+        style={{
+          opacity: disabled ? 0.4 : 1,
+          cursor: disabled ? 'not-allowed' : 'auto',
+        }}
       />
 
       <Popover.Portal>
