@@ -7,6 +7,7 @@ specifiers:
   '@types/react-dom': ^18.0.9
   '@vitejs/plugin-react-swc': ^3.0.0
   autoprefixer: ^10.4.13
+  clsx: ^1.2.1
   dayjs: ^1.11.7
   phosphor-react: ^1.4.1
   postcss: ^8.4.21
@@ -19,6 +20,7 @@ specifiers:
 dependencies:
   '@radix-ui/react-dialog': 1.0.2_ib3m5ricvtkl2cll7qpr2f6lvq
   '@radix-ui/react-popover': 1.0.3_ib3m5ricvtkl2cll7qpr2f6lvq
+  clsx: 1.2.1
   dayjs: 1.11.7
   phosphor-react: 1.4.1_react@18.2.0
   react: 18.2.0
@@ -803,6 +805,11 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
+
+  /clsx/1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
+    dev: false
 
   /color-name/1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
