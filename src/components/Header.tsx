@@ -12,7 +12,7 @@ export default function Header() {
       <Dialog.Root>
         <Dialog.Trigger
           type="button"
-          className="border border-violet-500 font-semibold rounded-lg px-6 py-4 flex items-center gap-3 hover:border-violet-300"
+          className="border border-violet-500 font-semibold rounded-lg px-6 py-4 flex items-center gap-3 hover:border-violet-300 transition-colors focus:outline-none focus:ring-2 focus:ring-violet-600 ring-offset-2 ring-offset-background"
         >
           <Plus size={20} className="text-violet-500" />
           Novo hábito
@@ -22,7 +22,7 @@ export default function Header() {
           <Dialog.Overlay className="w-screen h-screen bg-black/80 fixed inset-0" />
 
           <Dialog.Content className="absolute p-10 bg-zinc-900 rounded-2xl w-full max-w-md inset-0 m-auto h-fit">
-            <Dialog.Close className="absolute right-6 top-6 text-zinc-400 hover:text-zinc-200">
+            <Dialog.Close className="absolute right-6 top-6 text-zinc-400 hover:text-zinc-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-600 ring-offset-2 ring-offset-zinc-900">
               <X size={24} aria-label="Fechar" />
             </Dialog.Close>
 
